@@ -7,3 +7,48 @@ public class University {
 
     }
 }
+public class Students {
+    private static int studentsNumber;
+    private int indexNr;
+    private String name;
+    private String surname;
+
+    public Students(int indexNr, String name, String surname) {
+        this.indexNr = indexNr;
+        this.name = name;
+        this.surname = surname;
+        studentsNumber++;
+    }
+
+    public static int getStudentsNumber() {
+        return studentsNumber;
+    }
+
+    public static void setStudentsNumber(int studentsNumber) {
+        Students.studentsNumber = studentsNumber;
+    }
+
+    public int getIndexNr() {
+        return indexNr;
+    }
+
+    public void setIndexNr(int indexNr) {
+        this.indexNr = indexNr;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+}
