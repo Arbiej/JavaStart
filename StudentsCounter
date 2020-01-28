@@ -1,0 +1,9 @@
+public class University {
+    public static void main(String[] args) {
+        System.out.println("Students umber before enroll "+ Students.getStudentsNumber());
+        Students students = new Students(2231,"John", "Doe");
+        Students students1 = new Students(2242,"James", "Smith");
+        System.out.println("Students number after enroll "+ Students.getStudentsNumber());
+
+    }
+}
